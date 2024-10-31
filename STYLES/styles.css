@@ -1,0 +1,64 @@
+@import "fonts.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #f8f4e9;
+}
+
+header{
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px 15%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    height: auto;
+    width: 200px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    font-size: 14px;
+    padding: 0 14px;
+    font-family: Montserrat-Bold;
+    color: #f8f4e9;
+    text-decoration: none;
+}
+
+
+.btn1{
+    font-family: Montserrat-Bold;
+    padding: 2px 12px;
+}
+
+.btn2 {
+    font-family: Montserrat-Bold;
+    padding: 2px 12px;
+}
+
+.contenedor {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen_portada{
+    width: 100%;
+}

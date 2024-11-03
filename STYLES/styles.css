@@ -11,13 +11,17 @@ body {
     background-color: #f8f4e9;
 }
 
+/* ---------------------------------- Header y Menú Principal --------------------------------*/
+
 header{
     background-color: #191919;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     height: 100px;
     padding: 5px 15%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -27,38 +31,128 @@ header{
 .logo img {
     height: auto;
     width: 200px;
+    transition: transform 0.2s;
 }
 
-.menu {
-    list-style: none;
-    display: flex;
+.logo img:hover {
+    transform: scale(1.1);
 }
 
-.nav-link {
-    font-size: 14px;
-    padding: 0 14px;
-    font-family: Montserrat-Bold;
-    color: #f8f4e9;
+.list_item{
+display: inline-block;
+list-style: none;
+}
+
+.list_item:hover {
+    transform: scale(1.1);
+}
+
+.link {
     text-decoration: none;
+    color: #f8f4e9;
+    font-size: 14px;
+    padding: 0 16px;
+    font-family: 'Montserrat-SemiBold';
+    position: relative;
 }
 
+.link:hover {
+    color: rgb(255, 186, 83);
+}
 
+/* ---------------------------------- Botones --------------------------------*/
 .btn1{
+    font-size: 14px;
     font-family: Montserrat-Bold;
-    padding: 2px 12px;
+    padding: 4px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .btn2 {
+    font-size: 14px;
     font-family: Montserrat-Bold;
-    padding: 2px 12px;
+    padding: 4px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
+
+.btn1:hover{
+    transform: scale(1.1);
+    background-color:  rgb(255, 186, 83);
+    color: #191919;
+}
+
+.btn2:hover{
+    transform: scale(1.1);
+    background-color:  rgb(255, 186, 83);
+    color: #191919;
+}
+
+/* ---------------------------------- Imagen de Portada --------------------------------*/
+
+.imagen_portada{
+    width: 100%;
+}
+
+/* ---------------------------------- Contenedor del Body --------------------------------*/
 
 .contenedor {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0px 15%;
 }
 
-.imagen_portada{
+.mapa_formulario {
+height: 800px;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+padding: 40px;
+background-color: #801919;
+}
+
+.mapa {
+    width: 50%;
+}
+
+.mapa iframe {
     width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+.formulario_contacto{
+    width: 50%;
+    background-color: #801919;
+}
+
+.formulario_contacto label {
+    display: block;
+    margin-top: 10px;
+}
+/* ---------------------------------- Footer --------------------------------*/
+
+.footer {
+    background-color: #191919;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    height: auto;
+    width: 180px;
+    margin: 0 100px;
+    transition: transform 0.2s;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
 }

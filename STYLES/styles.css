@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #f8f4e9;
+    background-color: #ffffff;
 }
 
 /* ---------------------------------- Header y Menú Principal --------------------------------*/
@@ -39,8 +39,8 @@ header{
 }
 
 .list_item{
-display: inline-block;
-list-style: none;
+    display: inline-block;
+    list-style: none;
 }
 
 .list_item:hover {
@@ -95,27 +95,57 @@ list-style: none;
 
 .imagen_portada{
     width: 100%;
+    margin-bottom: 80px;
 }
 
-/* ---------------------------------- Contenedor del Body --------------------------------*/
+/* ---------------------------------- Contenedor Body --------------------------------*/
 
 .contenedor {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 0px 15%;
 }
+
+
+/* ---------------------------------- Texto presentación e imagen de nuestra empresa --------------------------------*/
+.nuestra-empresa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.flota-de-autos {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.texto-principal {
+    width: 55%;
+}
+
+.texto-principal h1 {
+    font-size: 45px;
+    color: #434343;
+    margin-bottom: 40px;
+}
+
+.texto-principal p {
+    font-size: 16px;
+    color: #434343;
+    margin: 25px 0 25px 0;
+}
+
 
 /* ---------------------------------- Mapa y Formulario de Contacto --------------------------------*/
 
 .mapa_formulario {
-margin-top: 20px;
-height: 700px;
-display: flex;
-justify-content: space-between;
-gap: 20px;
-padding: 40px;
-background-color: #5c5c5c;
+    margin-top: 80px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #5c5c5c;
 }
 
 .mapa {
@@ -181,12 +211,12 @@ background-color: #5c5c5c;
 }
 
 .formulario_contacto label {
-color: #000000;
-text-transform: uppercase;
-font-family: 'Montserrat-SemiBold';
-font-size: 14px;
-margin-bottom: 5px;
-display: block;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
 }
 
 

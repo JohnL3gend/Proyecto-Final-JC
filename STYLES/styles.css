@@ -65,22 +65,23 @@ header{
 .btns {
     height: auto;
     width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn1{
-    font-size: 14px;
+    font-size: 12px;
     font-family: Montserrat-Bold;
-    padding: 4px 15px;
-    margin: 10px;
+    padding: 4px 8px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .btn2 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: Montserrat-Bold;
-    padding: 4px 15px;
-    margin: 10px;
+    margin-top: 5px;
+    padding: 4px 8px;
     border-radius: 10px;
     cursor: pointer;
 }

@@ -22,6 +22,7 @@ header{
     position: fixed;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .logo {
@@ -118,6 +119,7 @@ header{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .flota-de-autos {
@@ -142,6 +144,93 @@ header{
     margin: 25px 0 25px 0;
 }
 
+/* ---------------------------------- Productos --------------------------------*/
+
+
+.titulo-productos {
+    font-size: 45px;
+    color: #434343;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.enganche, .barra-antivuelco, .tapa-rigida, .luminaria, .goteros, .lona-maritima, .cubreasientos, .alfombras, .estribos, .fenders, .barra-de-techo, .baul-de-techo {
+    width: 300px;
+    height: 300px;
+    margin: 0 50px 0 50px;
+    box-sizing: border-box;
+}
+
+.imagenes-productos1, .imagenes-productos2, .imagenes-productos3, .imagenes-productos4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #434343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* ---------------------------------- Servicios --------------------------------*/
+
+.servicios{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .titulo-servicios {
+        font-size: 45px;
+        color: #434343;
+        margin-bottom: 80px;
+        margin-top: 100px;
+        text-align: center;
+    
+}
+
+#carrusel {
+    display: flex;
+    width: 1000px;
+    height:500px;
+    overflow: hidden;
+}
+
+.items-carrusel {
+    height:100%;
+    position: relative;
+}
+
+.tarjeta-carrusel {
+    height: 100%;
+}
+
+.flechas-carrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flecha-izquierda, .flecha-derecha {
+    width: 30px; 
+    height: auto; 
+}
 
 /* ---------------------------------- Mapa y Formulario de Contacto --------------------------------*/
 
@@ -171,7 +260,7 @@ header{
     background-color: #5c5c5c;
 }
 
-.formulario_contacto h2 {
+.titulo-formulario {
     text-transform: uppercase;
     color: #000000;
     font-size: 30px;

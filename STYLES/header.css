@@ -1,0 +1,87 @@
+
+
+header{
+    background-color: #191919;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 5px 15%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    height: auto;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.list_item{
+    display: inline-block;
+    list-style: none;
+}
+
+.list_item:hover {
+    transform: scale(1.1);
+}
+
+.link {
+    text-decoration: none;
+    color: #f8f4e9;
+    font-size: 14px;
+    padding: 0 16px;
+    font-family: 'Montserrat-SemiBold';
+    position: relative;
+}
+
+.link:hover {
+    color: rgb(255, 186, 83);
+}
+
+/* ---------------------------------- Botones --------------------------------*/
+
+.btns {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1{
+    font-size: 12px;
+    font-family: Montserrat-Bold;
+    padding: 4px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn2 {
+    font-size: 12px;
+    font-family: Montserrat-Bold;
+    margin-top: 5px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    transform: scale(1.1);
+    background-color:  rgb(255, 186, 83);
+    color: #191919;
+}
+
+.btn2:hover{
+    transform: scale(1.1);
+    background-color:  rgb(255, 186, 83);
+    color: #191919;
+}

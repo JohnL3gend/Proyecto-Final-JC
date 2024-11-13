@@ -9,34 +9,58 @@
 </head>
 <body>
 
+
+    <!-------Header------->
+    
+
     <header class="header">
 
+    <!-------Checkbox para controlar la visibilidad del menú------->
+    
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
         <div class="logo">
-            <img src="Imagenes/SVG/Logo Blanco Noscop.svg" alt="logo de Noscop">
+            <a href="#Inicio">
+                <img src="Imagenes/SVG/Logo Blanco Noscop.svg" alt="logo de Noscop">
+            </a>
         </div>
+    
+        <nav class="nav"> 
+            <ul class="menu">
+                <li class="list_item"><a href="#SobreNosotros" class="link">SOBRE NOSOTROS</a></li>
+                <li class="list_item"><a href="#Productos" class="link">PRODUCTOS</a></li>
+                <li class="list_item"><a href="#Servicios" class="link">SERVICIOS</a></li>
+                <li class="list_item"><a href="#Contacto" class="link">CONTACTO</a></li>
+            </ul>
 
-    <nav class="nav"> 
-        <ul class="menu">
-            <li class="list_item"><a href="#Inicio" class="link">INICIO</a></li>  
-            <li class="list_item"><a href="#SobreNosotros" class="link">SOBRE NOSOTROS</a></li>
-            <li class="list_item"><a href="#Servicios" class="link">SERVICIOS</a></li>
-            <li class="list_item"><a href="#Productos" class="link">PRODUCTOS</a></li>
-            <li class="list_item"><a href="#Contacto" class="link">CONTACTO</a></li>
-        </ul>
-    </nav> 
-
-    <div class="btns">
-        <button class="btn1">REGISTRARSE</button>
-        <button class="btn2">INICIAR SESIÓN</button>
-    </div>
-
+    <!-------Botón para cerrar el menú------->
+            
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav> 
+    
+        <div class="btns">
+            <button class="btn1">REGISTRARSE</button>
+            <button class="btn2">INICIAR SESIÓN</button>
+        </div>
     </header> 
 
+    <!--Imagen de Portada-->
 
-    <img class="imagen_portada" src="Imagenes/Portada.jpg" alt="Portada de la web">
+    <section id="Inicio">
+        <img class="imagen_portada" src="Imagenes/Portada.jpg" alt="Portada de la web">
+    </section>
 
-    <div class="contenedor">
+<div class="contenedor">
+
+    <section id="SobreNosotros"> 
         <div class="nuestra-empresa">
+
+    <!------- Presentación Empresa -------->
     
             <div class="texto-principal">
                 <h1>Nuestra Empresa</h1>
@@ -54,8 +78,14 @@
             </div>
             <img class="flota-de-autos" src="Imagenes/Flota de autos.png" alt="Flota de autos de NOSCOP Equipamientos">
         </div>
+    </section>
 
-            <h2 class="titulo-productos">Productos</h2>
+    <!------- Productos ------->
+
+    <section id="Productos">
+
+        <div class="productos">
+            <h2>Productos</h2>
             
             <div class="imagenes-productos1">
                 <div class="producto1">
@@ -124,112 +154,53 @@
                     <p class="descripcion">Barras de Techo</p>
                 </div>
             </div>
+        </div>
+        </section>
 
-            <!----------------------------------------- CARRUSELLLLL ------------------------------------------------>
+    <!------- Servicios ------->
 
-            <div class="servicios">
-                <h2 class="titulo-servicios">Servicios</h2>
+    <section id="Servicios">
 
-        <div id="carrusel">
-                <div class="items-carrusel" id="items-carrusel1">
-                    <div class="tarjeta-carrusel" id="tarjeta-carrusel1">
-                        <img class="fotos-servicios" src="Imagenes/Servicios/Venta-y-Colocación-de-Equipamiento.jpg" alt="colocacion de equipamiento">
-                    </div>
-    
-                    <div class="flechas-carrusel">
-                        <a href="#items-carrusel5">
-                            <img class="flecha-izquierda" src="Imagenes/flecha izquierda.png" alt="flecha izquierda">
-                        </a>
-                        <a href="#items-carrusel2">
-                            <img class="flecha-derecha" src="Imagenes/flecha derecha.png" alt="flecha derecha">
-                        </a>
-                    </div>
-                </div>
+    <div class="servicios">
+        <h2>Servicios</h2>
+        <div class="fotos-servicios">
+            <div class="fotos1">
+                <img class="fotos" src="Imagenes/Servicios/Venta-y-Colocación-de-Equipamiento.jpg" alt="colocacion de equipamiento">
+                <img class="fotos" src="Imagenes/Servicios/Colocación-de-Cubreasientos.jpg" alt="colocacion de cubreasientos">
+            </div>
 
-                <div class="items-carrusel" id="items-carrusel2">
-                    <div class="tarjeta-carrusel" id="tarjeta-carrusel2">
-                        <img class="fotos-servicios" src="Imagenes/Servicios/Cambio-de-Aceite.jpg" alt="cambio de aceite">
-                    </div>
-        
-                    <div class="flechas-carrusel">
-                        <a href="#items-carrusel1">
-                            <img class="flecha-izquierda" src="Imagenes/flecha izquierda.png" alt="flecha izquierda">
-                        </a>
-                        <a href="#items-carrusel3">
-                            <img class="flecha-derecha" src="Imagenes/flecha derecha.png" alt="flecha derecha">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="items-carrusel" id="items-carrusel3">
-                    <div class="tarjeta-carrusel" id="tarjeta-carrusel3">
-                        <img class="fotos-servicios" src="Imagenes/Servicios/Colocación-de-Cubreasientos.jpg" alt="colocación de cubreasientos">
-                    </div>
-            
-                    <div class="flechas-carrusel">
-                        <a href="#items-carrusel2">
-                            <img class="flecha-izquierda" src="Imagenes/flecha izquierda.png" alt="flecha izquierda">
-                        </a>
-                        <a href="#items-carrusel4">
-                            <img class="flecha-derecha" src="Imagenes/flecha derecha.png" alt="flecha derecha">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="items-carrusel" id="items-carrusel4">
-                    <div class="tarjeta-carrusel" id="tarjeta-carrusel4">
-                        <img class="fotos-servicios" src="Imagenes/Servicios/Limpieza-Interior.jpg" alt="limpieza interior">
-                    </div>
-                
-                    <div class="flechas-carrusel">
-                        <a href="#items-carrusel3">
-                            <img class="flecha-izquierda" src="Imagenes/flecha izquierda.png" alt="flecha izquierda">
-                        </a>
-                        <a href="#items-carrusel5">
-                            <img class="flecha-derecha" src="Imagenes/flecha derecha.png" alt="flecha derecha">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="items-carrusel" id="items-carrusel5">
-                    <div class="tarjeta-carrusel" id="tarjeta-carrusel5">
-                        <img class="fotos-servicios" src="Imagenes/Servicios/Limpieza-Exterior.jpg" alt="limpieza exterior">
-                    </div>
-                    
-                    <div class="flechas-carrusel">
-                        <a href="#items-carrusel4">
-                            <img class="flecha-izquierda" src="Imagenes/flecha izquierda.png" alt="flecha izquierda">
-                        </a>
-                        <a href="#items-carrusel1">
-                            <img class="flecha-derecha" src="Imagenes/flecha derecha.png" alt="flecha derecha">
-                        </a>
-                    </div>
-                </div>
+            <div class="fotos2">
+                <img class="fotos" src="Imagenes/Servicios/Limpieza-Interior.jpg" alt="limpieza interior del vehículo">
+                <img class="fotos" src="Imagenes/Servicios/Limpieza-Exterior.jpg" alt="limpieza exterior del vehículo">
+            </div>
         </div>
     </div>
-</div>
-</div>
+    </section>
 
-<!----------------------------------------------- BOTÓN DE WHATSAPP ------------------------------->
+    <!------- Botón de Whatsapp ------->
 
-<div class="whatsapp">
-    <h2>Resolvé todas tus dudas por Whatsapp</h2>
+    <div class="whatsapp">
+        <h2>Resolvé todas tus dudas por Whatsapp</h2>
 
     <a id="boton-whatsapp" href="https://wa.me/message/A6BPNLHEXOMYN1" target="_blank">WhatsApp</a>
+    </div>
+
 </div>
+    
 
+<!------- Mapa y Formulario ------->
 
-<!----------------------------------------------- MAPA Y FORMULARIO ------------------------------->
-
+<section id="Contacto">
 <div class="mapa_formulario">
 
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d596.0129566216531!2d-58.08007810953854!3d-32.32371500587872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afc95c8a0fc7c5%3A0xe9814985d9be3e3c!2sVizconde%20de%20Mau%C3%A1%20637%2C%2060000%20Paysand%C3%BA%2C%20Departamento%20de%20Paysand%C3%BA!5e0!3m2!1ses!2suy!4v1730231382274!5m2!1ses!2suy" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div> 
 
+
     <form class="formulario_contacto">
         
-    <h2 class="titulo-formulario">Formulario de Contacto</h2>                                 
+    <h2>Formulario de Contacto</h2>                                 
     
     <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -249,12 +220,11 @@
         <div class="boton_formulario">
         <button type="submit">Enviar</button>
         </div>
-
-
     </form> 
 </div>
+</section>
 
-<!----------------------------------------------- FOOTER --------------------------------------------->
+<!------- Footer ------->
 
 <div class="footer"> 
     <footer>
@@ -270,7 +240,5 @@
 
     </footer>
 </div> 
-
-
 </body>
 </html>

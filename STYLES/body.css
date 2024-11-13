@@ -1,35 +1,58 @@
-*{
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-    font-family: "Montserrat";
-}
 
 body {
     background-color: #ffffff;
 }
 
-/* ---------------------------------- Imagen de Portada --------------------------------*/
+
+section[id]{
+scroll-margin-top: 120px;
+}
+
+/* -------------------------- Contenedor Eelementos del Body ------------------------*/
+
+.contenedor {
+    padding: 5px 15%;
+}
+
+/* --- Responsive ---*/
+
+@media (max-width: 480px){
+    
+    .contenedor {
+        padding: 0px 20px;
+    }
+}
+
+
+/* ---------------------------------- Imagen de portada --------------------------------*/
 
 .imagen_portada{
     width: 100%;
-    margin-bottom: 80px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
 }
 
-/* ---------------------------------- Contenedor Body --------------------------------*/
+/* --- Responsive ---*/
 
-.contenedor {
-    padding: 0px 15%;
+@media (max-width: 480px){
+
+.imagen_portada{
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin-top: 90px;
+}
 }
 
-
-/* ---------------------------- Texto presentación e imagen de nuestra empresa -----------------------------*/
+/* ----------------- Texto presentación e imagen de nuestra empresa --------------------*/
 
 .nuestra-empresa {
     width: 100%;
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
@@ -37,10 +60,6 @@ body {
     max-width: 40%;
     height: auto;
     margin-bottom: 40px;
-}
-
-.texto-principal {
-    width: 55%;
 }
 
 .texto-principal h1 {
@@ -52,13 +71,48 @@ body {
 .texto-principal p {
     font-size: 16px;
     color: #434343;
-    margin: 25px 0 25px 0;
+    margin: 25px 50px 25px 0;
 }
+
+/* --- Responsive ---*/
+
+@media (max-width: 480px){
+
+    .nuestra-empresa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .texto-principal h1 {
+        font-size: 25px;
+        color: #434343;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .texto-principal p {
+        font-size: 12px;
+        color: #434343;
+        margin: 0px 0 25px 0;
+        text-align: center;
+    }
+
+    .flota-de-autos {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+}
+
 
 /* ---------------------------------- Productos --------------------------------*/
 
 
-.titulo-productos {
+.productos h2 {
     font-size: 45px;
     color: #434343;
     margin-bottom: 50px;
@@ -66,7 +120,18 @@ body {
     text-align: center;
 }
 
-.enganche, .barra-antivuelco, .tapa-rigida, .luminaria, .goteros, .lona-maritima, .cubreasientos, .alfombras, .estribos, .fenders, .barra-de-techo, .baul-de-techo {
+.enganche,
+.barra-antivuelco,
+.tapa-rigida,
+.luminaria,
+.goteros,
+.lona-maritima,
+.cubreasientos,
+.alfombras,
+.estribos,
+.fenders,
+.barra-de-techo,
+.baul-de-techo {
     width: 300px;
     height: 300px;
     margin: 0 50px 0 50px;
@@ -88,62 +153,91 @@ body {
     justify-content: center;
 }
 
-    /* ---------------------------------- Servicios --------------------------------*/
+/* --- Responsive ---*/
 
-.servicios{
-    text-align: center;
+@media (max-width: 480px){
+
+    .productos {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .productos h2 {
+        font-size: 25px;
+        color: #434343;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        text-align: center;
+    } 
+
+    .enganche,
+.barra-antivuelco,
+.tapa-rigida,
+.luminaria,
+.goteros,
+.lona-maritima,
+.cubreasientos,
+.alfombras,
+.estribos,
+.fenders,
+.barra-de-techo,
+.baul-de-techo {
+    width: 100px;
+    height: 100px;
+    margin: 0 25px 0 25px;
+    box-sizing: border-box;
+}
+
+.descripcion {
+    font-size: 12px;
+    color: #434343;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.titulo-servicios {
-    font-size: 45px;
-    color: #434343;
-    margin-bottom: 80px;
-    margin-top: 200px;
-    text-align: center;
-    
 }
 
-#carrusel {
-    display: flex;
-    width: 1000px;
-    height:500px;
-    overflow: hidden;
+    /* ---------------------------------- Servicios --------------------------------*/
+
+    .servicios h2 {
+        font-size: 45px;
+        color: #434343;
+        margin-bottom: 80px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .fotos{
+        width: 49%;
+        height: auto;
+    }
+
+    .fotos1{
+        justify-content: space-between;
+        display: flex;
+        margin: 0 0 2% 0px;
+    }
+
+    .fotos2{
+        justify-content: space-between;
+        display: flex;
+        margin: 0 0 2% 0px;
+    }
+
+    /* --- Responsive ---*/
+
+@media (max-width: 480px) {
+
+    .servicios h2 {
+        font-size: 25px;
+        color: #434343;
+        margin-top: 80px;
+        text-align: center;
+    } 
 }
 
-.items-carrusel {
-    height:100%;
-    position: relative;
-}
-
-.tarjeta-carrusel {
-    height: 100%;
-}
-
-.flechas-carrusel {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.flecha-izquierda, .flecha-derecha {
-    width: 30px; 
-    height: auto; 
-}
-
-/* ---------------------------------- Mapa y Formulario de Contacto --------------------------------*/
+/* ---------------------------------- Whatsapp --------------------------------*/
 
 .whatsapp {
     display: flex;
@@ -155,8 +249,8 @@ a {
 .whatsapp h2 {
     font-size: 45px;
     color: #434343;
-    margin-bottom: 100px;
-    margin-top: 200px;
+    margin-bottom: 80px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -174,8 +268,35 @@ a {
     display: flex;            
     justify-content: center;  
     align-items: center;   
+    text-decoration: none;
 }
 
+@media (max-width: 480px) {
+
+    .whatsapp h2 {
+        font-size: 25px;
+        color: #434343;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #boton-whatsapp {
+        height: 60px;
+        width: 220px;
+        border-radius: 40px;
+        background-color: #37ae4a;
+        font-size: 32px;
+        font-family: 'Montserrat-SemiBold';
+        color: #ffffff;
+        cursor: pointer;
+        border: none;
+        display: flex;            
+        justify-content: center;  
+        align-items: center;   
+        text-decoration: none;
+    }
+}
 
 /* ---------------------------------- Mapa y Formulario de Contacto --------------------------------*/
 
@@ -184,7 +305,6 @@ a {
     height: 700px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     padding: 40px;
     background-color: #5c5c5c;
 }
@@ -205,7 +325,7 @@ a {
     background-color: #5c5c5c;
 }
 
-.titulo-formulario {
+.formulario_contacto h2 {
     text-transform: uppercase;
     color: #000000;
     font-size: 30px;
@@ -258,4 +378,76 @@ a {
     font-size: 14px;
     margin-bottom: 5px;
     display: block;
+}
+
+/* ----- Responsive ----*/
+
+@media (max-width:480px){
+
+    .mapa_formulario {
+        margin-top: 20px;
+        height: 1050px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #5c5c5c;
+    }
+
+    .mapa {
+        width: auto;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .formulario_contacto{
+        width: auto;
+        background-color: #5c5c5c;
+    }
+
+    .formulario_contacto h2 {
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Montserrat-ExtraBold';
+    }
+
+    .formulario_contacto button {
+        width: 80px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-family: 'Montserrat-Bold';
+        font-size: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .formulario_contacto label {
+        color: #000000;
+        text-transform: uppercase;
+        font-family: 'Montserrat-SemiBold';
+        font-size: 10px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .formulario_contacto input[type="text"],
+    .formulario_contacto input[type="email"],
+    .formulario_contacto input[type="tel"]{
+        font-size: 10px;
+        width: 100%;
+        margin: 10px;
+        padding: 10px; 
+        border:none;
+        background: none;
+        outline: none;
+        color: #ffff;
+        border-bottom: 1px solid #000000;
+}
+
 }

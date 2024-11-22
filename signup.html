@@ -3,32 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup</title>
-    <script src="signup.js"></script>
+    <title>Registro</title>
+    <link rel="stylesheet" href="/STYLES/signup.css">
 </head>
 
 <body>
     <section>
         <h2>REGISTRO</h2>
-        <form id="signup-form"></form>
-        <label>Nombre</label>
-        <input type="text" id="nombre" required>
-        <label>Apellido</label>
-        <input type="text" id="apellido" required>
-        <label>Email</label>
-        <input type="email" id="email" required>
-        <label>Contraseña</label>
-        <input type="password" id="password" required>
-        <select id="genero" name="genero">
-            <option value="" disabled selected>Seleccione su género</option>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-        </select>
-        <input type="submit" value="INGRESAR">
-
-        <p>¿Ya tienes una cuenta?<a href="login.html">Ingresá</a></p>
+        <form id="signup-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+            
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="" disabled selected>Seleccione su género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            
+            <input type="submit" value="REGISTRARSE">
+        </form>
+        
+        <p>¿Ya tienes una cuenta? <a href="login.html"> Ingresá</a></p>
     </section>
+
+    <script src="/JS/signup.js" defer></script>
 
 </body>
 </html>

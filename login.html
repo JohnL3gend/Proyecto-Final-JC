@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="/STYLES/login.css">
 </head>
 
 <body>
     <section>
         <h2>INICIAR SESIÓN</h2>
-        <form id="login-form"></form>
-        <label>Correo electrónico</label>
-        <input type="email" id="email" required>
-        <label>Contraseña</label>
-        <input type="password" id="password" required>
+        <form id="login-form">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="password" required>
+
         <input type="submit" value="INGRESAR">
 
-        <p>¿No tienes una cuenta?<a href="signup.html">Registro</a></p>
+        <p>¿No tienes una cuenta? <a href="signup.html">Registrate acá</a></p>
+    </form>
     </section>
+
+    <script src="/JS/login.js"></script>
 
 </body>
 </html>
